@@ -42,3 +42,6 @@ markdown: kramdown
 plugins:
   - jekyll-remote-theme
   - jekyll-sass-converter
+
+sass:
+  style: compressed
