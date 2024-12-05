@@ -18,18 +18,69 @@ en: &DEFAULT_EN
 
   skills:
     title: "Skill"
-    text: "Lorem ipsum"
-    section: skills
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+    section:
+      languages:
+        list:
+          - title: "C#"
+            logo: assets/img/skills/csharp.svg
+          - title: "TypeScript"
+            logo: assets/img/skills/typescript.svg
+          - title: "Java"
+            logo: assets/img/skills/java.svg
+          - title: "Python"
+            logo: assets/img/skills/python.svg
+          - title: "JavaScript"
+            logo: assets/img/skills/javascript.svg
+          - title: "SQL"
+            logo: assets/img/skills/sql.svg
+          - title: "PL/SQL"
+            logo: assets/img/skills/plsql.png
+      framework:
+        list:
+          - title: ".net"
+            logo: assets/img/skills/dotnet.svg
+          - title: "Spring Boot"
+            logo: assets/img/skills/springboot.svg
+          - title: "Vue.JS"
+            logo: assets/img/skills/vuejs.svg
+          - title: "Node.js"
+            logo: assets/img/skills/nodejs.svg
+          - title: "TensorFlow"
+            logo: assets/img/skills/tensorflow.svg
+          - title: "Jekyll"
+            logo: assets/img/skills/jekyll.svg
+          - title: "Flask"
+            logo: assets/img/skills/flask.svg
+      devops:
+        list:
+          - title: "Git"
+            logo: assets/img/skills/git.svg
+          - title: "GitHub"
+            logo: assets/img/skills/github.svg
+          - title: "Docker"
+            logo: assets/img/skills/docker.svg
+          - title: "Jenkins"
+            logo: assets/img/skills/jenkins.svg
+      dataabse:
+        list:
+          - title: "SQL Server"
+            logo: assets/img/skills/sqlserver.svg
+          - title: "Oracle"
+            logo: assets/img/skills/oracledb.svg
+          - title: "MongoDB"
+            logo: assets/img/skills/mongodb.svg
+      platform:
+        list:
+          - title: "Microsoft Azure"
+            logo: assets/img/skills/azure.svg
+          - title: "Amazon Web Services"
+            logo: assets/img/skills/aws.svg
+      methodologies:
+        list:
+          - title: "Scrum"
+            logo: assets/img/skills/scrum.svg
+          - title: "Kanban"
+            logo: assets/img/skills/kanban.svg
 
   portfolio:
     title: "Portfolio"
@@ -69,69 +120,12 @@ en: &DEFAULT_EN
     end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "About Us"
-    text: "our story"
+    title: "About Me"
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
     section: about
 
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: team
-    people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
   contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    title: "Send me a message"
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."

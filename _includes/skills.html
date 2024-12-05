@@ -1,0 +1,55 @@
+<!-- Skills -->
+<section class="page-section" id="{{ site.data.sitetext[site.locale].skills.section.language | default: "skills" }}">
+  <div class="container">
+    <div class="row text-center">
+  {% for language in site.data.sitetext[site.locale].skills.section.languages.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ language.logo }}" alt="{{language.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ language.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+    <div class="row text-center">
+  {% for framework in site.data.sitetext[site.locale].skills.section.framework.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ framework.logo }}" alt="{{framework.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ framework.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+    <div class="row text-center">
+  {% for dataabse in site.data.sitetext[site.locale].skills.section.dataabse.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ dataabse.logo }}" alt="{{dataabse.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ dataabse.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+    <div class="row text-center">
+  {% for devops in site.data.sitetext[site.locale].skills.section.devops.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ devops.logo }}" alt="{{devops.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ devops.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+    <div class="row text-center">
+  {% for platform in site.data.sitetext[site.locale].skills.section.platform.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ platform.logo }}" alt="{{platform.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ platform.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+     <div class="row text-center">
+  {% for methodologies in site.data.sitetext[site.locale].skills.section.methodologies.list %}
+      <div class="col-md-2 text-muted">
+        <img class="img-fluid d-block mx-auto" src="{{ methodologies.logo }}" alt="{{methodologies.title}}" style="width:100px; max-height: 100px;">
+        <p >{{ methodologies.title | markdownify }}</p>
+      </div>
+  {% endfor %}
+    </div>
+  
+  </div>
+</section>
+<!-- End Skills -->
