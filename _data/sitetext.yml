@@ -17,9 +17,10 @@ en: &DEFAULT_EN
     buttonlink: "#about"
 
   skills:
-    title: "Skill"
+    title: "Tech stack"
     section:
       languages:
+        title: "Languages"
         list:
           - title: "C#"
             logo: assets/img/skills/csharp.svg
@@ -36,6 +37,7 @@ en: &DEFAULT_EN
           - title: "PL/SQL"
             logo: assets/img/skills/plsql.png
       framework:
+        title: "Frameworks"
         list:
           - title: ".net"
             logo: assets/img/skills/dotnet.svg
@@ -52,6 +54,7 @@ en: &DEFAULT_EN
           - title: "Flask"
             logo: assets/img/skills/flask.svg
       devops:
+        title: "DevOps"
         list:
           - title: "Git"
             logo: assets/img/skills/git.svg
@@ -62,6 +65,7 @@ en: &DEFAULT_EN
           - title: "Jenkins"
             logo: assets/img/skills/jenkins.svg
       dataabse:
+        title: "Databases"
         list:
           - title: "SQL Server"
             logo: assets/img/skills/sqlserver.svg
@@ -70,12 +74,14 @@ en: &DEFAULT_EN
           - title: "MongoDB"
             logo: assets/img/skills/mongodb.svg
       platform:
+        title: "Cloud Platforms"
         list:
           - title: "Microsoft Azure"
             logo: assets/img/skills/azure.svg
           - title: "Amazon Web Services"
             logo: assets/img/skills/aws.svg
       methodologies:
+        title: "Methodologies"
         list:
           - title: "Scrum"
             logo: assets/img/skills/scrum.svg
