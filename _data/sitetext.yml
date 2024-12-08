@@ -16,6 +16,15 @@ en: &DEFAULT_EN
     button: Tell Me More
     buttonlink: "#about"
 
+  about:
+    title: "About Me"
+    body: "Hi, I'm Oswald Wing Cheung Kam, a senior full stacked engineer with 10 years experience based in Toronto, Ontario, Canada."
+    social:
+      - url: https://linkedin.com/in/oswaldkam
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/oswaldkam
+        icon: "fab fa-github"
+
   skills:
     title: "Tech stack"
     section:
@@ -36,7 +45,7 @@ en: &DEFAULT_EN
             logo: assets/img/skills/sql.svg
           - title: "PL/SQL"
             logo: assets/img/skills/plsql.png
-      framework:
+      frameworks:
         title: "Frameworks"
         list:
           - title: ".net"
@@ -47,6 +56,8 @@ en: &DEFAULT_EN
             logo: assets/img/skills/vuejs.svg
           - title: "Node.js"
             logo: assets/img/skills/nodejs.svg
+          - title: "GraphQL"
+            logo: assets/img/skills/graphql.svg
           - title: "TensorFlow"
             logo: assets/img/skills/tensorflow.svg
           - title: "Jekyll"
@@ -64,7 +75,7 @@ en: &DEFAULT_EN
             logo: assets/img/skills/docker.svg
           - title: "Jenkins"
             logo: assets/img/skills/jenkins.svg
-      dataabse:
+      dataabses:
         title: "Databases"
         list:
           - title: "SQL Server"
@@ -73,7 +84,7 @@ en: &DEFAULT_EN
             logo: assets/img/skills/oracledb.svg
           - title: "MongoDB"
             logo: assets/img/skills/mongodb.svg
-      platform:
+      platforms:
         title: "Cloud Platforms"
         list:
           - title: "Microsoft Azure"
@@ -124,11 +135,6 @@ en: &DEFAULT_EN
         # you can enforce the alignment
         align: right
     end: "Be Part <br> of Our <br> Story!"
-
-  about:
-    title: "About Me"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: about
 
   contact:
     title: "Send me a message"
