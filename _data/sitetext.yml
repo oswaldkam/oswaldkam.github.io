@@ -99,42 +99,74 @@ en: &DEFAULT_EN
           - title: "Kanban"
             logo: assets/img/skills/kanban.svg
 
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
-
   timeline:
     title: "Timeline"
-    text: "Lorem ipsum timeline"
+    text: "It's about my work experience"
     section: timeline
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
+      - title: "Hong Kong Metropolitan University"
+        year: "Sep 2011 - Aug 2014"
+        desc: "Graduated with a Bachelor of Computing in Internet Technology in first class honours"
+        image: assets/img/timeline/hkmu.png
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
+      - title: "Programmer"
+        year: "Nov 2014 - Oct 2017"
+        desc: ""
+        image: assets/img/timeline/pccw.jpeg
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
+        list:
+          - title: "game"
+            desc: ""
+            list:
+              - desc:
+                image:
+              - desc:
+                image:
+      - title: "Senior Web Developer"
+        year: "Sep 2017 - Jan 2020"
+        desc: ""
+        image: assets/img/timeline/esd.png
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
+        list:
+          - title: "game"
+            desc: ""
+            list:
+              - desc:
+                image:
+              - desc:
+                image:
+      - title: "Senior Full Stack Engineer"
+        year: "Jun 2020 - Dec 2024"
+        desc: ""
+        image: assets/img/timeline/psa.png
+        alt:
+          list:
+          - title: "game"
+            desc: ""
+            list:
+              - desc:
+                image:
+              - desc:
+                image:
+        # you can enforce the alignment
+        align: right
+      - title: "Professional Scrum Master"
+        year: "Jan 2021"
+        desc: "Got Professional Scrum Master I certification"
+        image: assets/img/timeline/psm.png
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+      - title: "Centennial College"
+        year: "Jan 2023 - Aug 2024"
+        desc: "Graduated with a Advance Diploma in Software Engineering - Artificial Intelligence (Fast Track - FT) in high honours"
+        image: assets/img/timeline/centennial.jpeg
+        alt:
+        # you can enforce the alignment
+        align: left
+    end: ""
 
   contact:
     title: "Send me a message"
@@ -157,6 +189,9 @@ en: &DEFAULT_EN
         icon: "fab fa-linkedin-in"
       - url: https://github.com/oswaldkam
         icon: "fab fa-github"
+    theme:
+      text: "agency-jekyll-theme"
+      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
