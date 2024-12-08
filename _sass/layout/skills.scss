@@ -1,7 +1,8 @@
 :root {
-    --skill-logo-width: 90px;
-    --skill-logo-height: 90px;
-    --skill-card-height: 120px;
+    --skill-logo-width: 5rem;
+    --skill-logo-height: 5rem;
+    --skill-card-height: 7rem;
+    --skill-item-margin-bottom: 2rem;
 }
 /* Page Section */
 
@@ -9,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: var(--skill-item-margin-bottom);
 }
 
 .skill-card {
@@ -22,10 +23,16 @@
 
     img {
             
-            min-width: var(--skill-logo-width);
-            max-width: var(--skill-logo-width);
-            max-height: var(--skill-logo-height);
-            height: auto;
-            width: auto;
-        }
+        min-width: var(--skill-logo-width);
+        max-width: var(--skill-logo-width);
+        max-height: var(--skill-logo-height);
+        margin-top: auto;
+        margin-bottom: auto;
+        height: auto;
+        width: auto;
+    }
+    p   {
+        margin-bottom:0;
+
+    }
 }
