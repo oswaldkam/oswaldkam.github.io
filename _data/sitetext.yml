@@ -116,55 +116,68 @@ en: &DEFAULT_EN
         desc: ""
         image: assets/img/timeline/pccw.jpeg
         alt:
-        list:
+        works:
           - title: "game"
             desc: ""
-            list:
-              - desc:
-                image:
-              - desc:
-                image:
+            alt:
+            image: assets/img/timeline/gamepanel.png
+          - title: "game"
+            desc: ""
+            alt:
+            image: assets/img/timeline/stockpanel.png
       - title: "Senior Web Developer"
         year: "Sep 2017 - Jan 2020"
         desc: ""
         image: assets/img/timeline/esd.png
         alt: image alt text
-        list:
+        works:
+          - title: "game"
+            desc: "hello world hello world hello world"
+            alt:
+            image: assets/img/timeline/omland.png
           - title: "game"
             desc: ""
-            list:
-              - desc:
-                image:
-              - desc:
-                image:
+            alt:
+            image: assets/img/timeline/omnicc.png
+          - title: "game"
+            desc: ""
+            alt:
+            image: assets/img/timeline/omniotp.png
+         
       - title: "Senior Full Stack Engineer"
         year: "Jun 2020 - Dec 2024"
         desc: ""
         image: assets/img/timeline/psa.png
         alt:
-          list:
-          - title: "game"
+        works:
+          - title: "Config System for Game Engineer"
             desc: ""
-            list:
-              - desc:
-                image:
-              - desc:
-                image:
-        # you can enforce the alignment
+            alt:
+            image: assets/img/timeline/manifest.png
+          - title: "Config System for Others"
+            desc: ""
+            alt:
+            image: assets/img/timeline/cfg.png
+          - title: "Config System for Game Engineer"
+            desc: ""
+            alt:
+            image: assets/img/timeline/abtest.png
+          - title: "Config System for Others"
+            desc: ""
+            alt:
+            image: assets/img/timeline/lb.png
         align: right
       - title: "Professional Scrum Master"
         year: "Jan 2021"
         desc: "Got Professional Scrum Master I certification"
         image: assets/img/timeline/psm.png
         alt:
-        # you can enforce the alignment
-        align: right
+        align: left
       - title: "Centennial College"
         year: "Jan 2023 - Aug 2024"
         desc: "Graduated with a Advance Diploma in Software Engineering - Artificial Intelligence (Fast Track - FT) in high honours"
         image: assets/img/timeline/centennial.jpeg
         alt:
-        # you can enforce the alignment
         align: left
     end: ""
 
