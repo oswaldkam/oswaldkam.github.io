@@ -117,11 +117,11 @@ en: &DEFAULT_EN
         image: assets/img/timeline/pccw.jpeg
         alt:
         works:
-          - title: "game"
+          - title: "TV;s live tv game show data panel"
             key: "gamepanel"
             alt:
             image: assets/img/timeline/gamepanel-thumbnail.png
-          - title: "game"
+          - title: "TV's stock program data panel"
             key: "stockpanel"
             alt:
             image: assets/img/timeline/stockpanel-thumbnail.png
@@ -131,7 +131,7 @@ en: &DEFAULT_EN
         image: assets/img/timeline/esd.png
         alt: image alt text
         works:
-          - title: "game"
+          - title: "Banks's credit card mobile app"
             key: omni
             alt:
             image: assets/img/timeline/omland-thumbnail.png
@@ -142,11 +142,11 @@ en: &DEFAULT_EN
         image: assets/img/timeline/psa.png
         alt:
         works:
-          - title: "Config System for Game Engineer"
+          - title: "Game's config system for Game Engineer"
             key: "ge"
             alt:
             image: assets/img/timeline/manifest-thumbnail.png
-          - title: "Config System for Others"
+          - title: "Game's config system for Operation"
             key: "ops"
             alt:
             image: assets/img/timeline/lb-thumbnail.png
