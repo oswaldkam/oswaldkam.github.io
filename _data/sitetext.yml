@@ -118,11 +118,11 @@ en: &DEFAULT_EN
         alt:
         works:
           - title: "game"
-            url: "portfolios/gamepanel.html"
+            key: "gamepanel"
             alt:
             image: assets/img/timeline/gamepanel-thumbnail.png
           - title: "game"
-            url: "portfolios/stockpanel.html"
+            key: "stockpanel"
             alt:
             image: assets/img/timeline/stockpanel-thumbnail.png
       - title: "Senior Web Developer"
@@ -132,7 +132,7 @@ en: &DEFAULT_EN
         alt: image alt text
         works:
           - title: "game"
-            url: "portfolios/omni.html"
+            key: omni
             alt:
             image: assets/img/timeline/omland-thumbnail.png
          
@@ -143,11 +143,11 @@ en: &DEFAULT_EN
         alt:
         works:
           - title: "Config System for Game Engineer"
-            url: "portfolios/psa_ge.html"
+            key: "ge"
             alt:
             image: assets/img/timeline/manifest-thumbnail.png
           - title: "Config System for Others"
-            url: "/portfolios/psa_ops.html"
+            key: "ops"
             alt:
             image: assets/img/timeline/lb-thumbnail.png
         align: right
