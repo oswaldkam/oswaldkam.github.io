@@ -47,12 +47,10 @@
                 {%- for work in event.works -%}
                   {% assign imageFileName = work.image | split: '/' | last %}
                   {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
-                  <div class="col-md-6 col-sm-12 portfolio-item">    
-                    <a class="portfolio-link text-muted" data-toggle="modal" href="#{{ work.key }}">
+                  <div class="col-md-6 col-sm-12">    
+                    <a class="text-muted" data-toggle="modal" href="#{{ work.key }}">
                       <img class="img-fluid" src="{{ work.image }}" alt="">
-                      <div class="portfolio-caption">
-                        <span>{{ work.title }} <i class="fa fa-search" aria-hidden="true"></i></span>
-                      </div>
+                      <span>{{ work.title }} <i class="fa fa-search" aria-hidden="true"></i></span>
                     </a>
                   </div>
                 {% endfor %}	
