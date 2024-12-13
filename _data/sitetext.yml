@@ -117,7 +117,7 @@ en: &DEFAULT_EN
         image: assets/img/timeline/pccw.jpeg
         alt:
         works:
-          - title: "TV;s live tv game show data panel"
+          - title: "TV's live tv game show data panel"
             key: "gamepanel"
             alt:
             image: assets/img/timeline/gamepanel-thumbnail.png
