@@ -118,13 +118,13 @@ en: &DEFAULT_EN
         alt:
         works:
           - title: "game"
-            desc: ""
+            url: "portfolios/gamepanel.html"
             alt:
-            image: assets/img/timeline/gamepanel.png
+            image: assets/img/timeline/gamepanel-thumbnail.png
           - title: "game"
-            desc: ""
+            url: "portfolios/stockpanel.html"
             alt:
-            image: assets/img/timeline/stockpanel.png
+            image: assets/img/timeline/stockpanel-thumbnail.png
       - title: "Senior Web Developer"
         year: "Sep 2017 - Jan 2020"
         desc: ""
@@ -132,17 +132,9 @@ en: &DEFAULT_EN
         alt: image alt text
         works:
           - title: "game"
-            desc: "hello world hello world hello world"
+            url: "portfolios/omni.html"
             alt:
-            image: assets/img/timeline/omland.png
-          - title: "game"
-            desc: ""
-            alt:
-            image: assets/img/timeline/omnicc.png
-          - title: "game"
-            desc: ""
-            alt:
-            image: assets/img/timeline/omniotp.png
+            image: assets/img/timeline/omland-thumbnail.png
          
       - title: "Senior Full Stack Engineer"
         year: "Jun 2020 - Dec 2024"
@@ -151,21 +143,13 @@ en: &DEFAULT_EN
         alt:
         works:
           - title: "Config System for Game Engineer"
-            desc: ""
+            url: "portfolios/psa_ge.html"
             alt:
-            image: assets/img/timeline/manifest.png
+            image: assets/img/timeline/manifest-thumbnail.png
           - title: "Config System for Others"
-            desc: ""
+            url: "/portfolios/psa_ops.html"
             alt:
-            image: assets/img/timeline/cfg.png
-          - title: "Config System for Game Engineer"
-            desc: ""
-            alt:
-            image: assets/img/timeline/abtest.png
-          - title: "Config System for Others"
-            desc: ""
-            alt:
-            image: assets/img/timeline/lb.png
+            image: assets/img/timeline/lb-thumbnail.png
         align: right
       - title: "Professional Scrum Master"
         year: "Jan 2021"
