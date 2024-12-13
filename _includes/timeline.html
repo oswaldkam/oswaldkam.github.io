@@ -1,4 +1,4 @@
-<!-- About -->
+<!-- Timeline -->
 <section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}">
   <div class="container">
     <div class="row">
@@ -47,39 +47,16 @@
                 {%- for work in event.works -%}
                   {% assign imageFileName = work.image | split: '/' | last %}
                   {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
-                  {%-if event.align and event.align == "right"-%}
-                     <div class="col-md-6 col-sm-12 portfolio-item">    
-                    {%- else -%}
-                    <div class="col-md-6 col-sm-12 portfolio-item">    
-                    {%- endif -%}
+                  <div class="col-md-6 col-sm-12 portfolio-item">    
                     <a class="portfolio-link text-muted" data-toggle="collapse" href="#{{ fileNameWithoutExtension }}" role="button">
-                      <i class="fas fa-plus"></i>
-                      <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">                
-                        </div>
-                      </div>
                       <img class="img-fluid" src="{{ work.image }}" alt="">
                       <div class="portfolio-caption">
-                      <span>{{ work.title }}</span>
-                    </div>
+                        <span>{{ work.title }} <i class="fa fa-search" aria-hidden="true"></i></span>
+                      </div>
                     </a>
                   </div>
                 {% endfor %}	
                 </div>
-                {%- for work in event.works -%}
-                  {% assign imageFileName = work.image | split: '/' | last %}
-                  {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
-                <div class="row">
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="{{ fileNameWithoutExtension }}">
-                        <div class="card card-body">
-                          <p>{{ work.title}}</p>
-                          <p>{{ work.desc}}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {% endfor %}	
               </div>
               {%- endif -%}
             </div>
@@ -90,4 +67,5 @@
     </div>
   </div>
 </section>
-<!-- End About -->
+<!-- End Timeline -->
+{% include portfolios.html %}
