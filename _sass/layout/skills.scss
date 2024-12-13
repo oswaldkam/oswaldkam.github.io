@@ -1,38 +1,36 @@
 :root {
-    --skill-logo-width: 5rem;
-    --skill-logo-height: 5rem;
-    --skill-card-height: 7rem;
-    --skill-item-margin-bottom: 2rem;
+  --skill-logo-width: 5rem;
+  --skill-logo-height: 5rem;
+  --skill-card-height: 7rem;
+  --skill-item-margin-bottom: 2rem;
 }
 /* Page Section */
 
 .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: var(--skill-item-margin-bottom);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--skill-item-margin-bottom);
 }
 
 .skill-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    height: var(--skill-card-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: var(--skill-card-height);
 
-    img {
-            
-        min-width: var(--skill-logo-width);
-        max-width: var(--skill-logo-width);
-        max-height: var(--skill-logo-height);
-        margin-top: auto;
-        margin-bottom: auto;
-        height: auto;
-        width: auto;
-    }
-    p   {
-        margin-bottom:0;
-
-    }
+  img {
+    min-width: var(--skill-logo-width);
+    max-width: var(--skill-logo-width);
+    max-height: var(--skill-logo-height);
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: auto;
+  }
+  p {
+    margin-bottom: 0;
+  }
 }
