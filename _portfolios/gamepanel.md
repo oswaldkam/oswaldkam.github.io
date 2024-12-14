@@ -19,6 +19,12 @@ images:
     - url: assets/img/portfolios/gp_1.png
       desc: 
       alt:
+    - url: assets/img/portfolios/gp_2.png
+      desc: 
+      alt:
+    - url: assets/img/portfolios/gp_3.png
+      desc: 
+      alt:
 ---
 The game control panel is a specialized application designed for managing interactive elements of a single TV program. It integrates seamlessly with CG servers via APIs to control and display dynamic visual content, including real-time voting statistics, and jackpot results. The statistical and jackpot data are processed by separate applications managed by different teams and fetched via APIs for display.
 
