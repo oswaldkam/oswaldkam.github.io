@@ -16,10 +16,14 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <h2 class="text-uppercase">{{ project.title }}</h2>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase">{{ portfolio.title }}</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
               <!-- Image sldie -->
               <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -43,7 +47,44 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              <p>{{ portfolio.content }}</p>
+            </div>
+          </div>
+          <div class="row portfolio-info">
+            <div class="col-lg-3 offset-lg-2">
+              <p>Date: {{portfolio.projectDate}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>Client: {{portfolio.company}}</p>
+            </div>
+            <div class="col-lg-2">
+                <p>Category: {{portfolio.category}}</p>
+            </div>
+          </div>
+          <div class="portfolio-skills">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <p>Skills:</p>
+                <ul class="portfolio-skills-list">
+                  {% for skill in portfolio.skills.list %}
+                    <li>
+                      <img src="{{ skill.url }}" alt="{{ skill.text }}">
+                      <span>{{ skill.text }}</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p>{{ portfolio.content }}</span>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-lg-8 mx-auto">
+            
               <button
                 class="btn btn-primary"
                 data-dismiss="modal"
