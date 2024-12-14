@@ -103,8 +103,8 @@ en: &DEFAULT_EN
     title: "Timeline"
     text: "It's about my work experience"
     section: timeline
-    # left is the default
-    #start_align: "left"
+    project:
+        text: Works showcase
     events:
       - title: "Hong Kong Metropolitan University"
         year: "Sep 2011 - Aug 2014"
@@ -117,11 +117,11 @@ en: &DEFAULT_EN
         image: assets/img/timeline/pccw.jpeg
         alt:
         works:
-          - title: "TV's live tv game show data panel"
+          - title: "Live game show data panel"
             key: "gamepanel"
             alt:
             image: assets/img/timeline/gamepanel-thumbnail.png
-          - title: "TV's stock program data panel"
+          - title: "Stock market program data panel"
             key: "stockpanel"
             alt:
             image: assets/img/timeline/stockpanel-thumbnail.png

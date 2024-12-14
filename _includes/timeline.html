@@ -12,23 +12,23 @@
         <ul class="timeline">
     {%- assign align = site.data.sitetext[site.locale].timeline.start_align -%}
     {%- for event in site.data.sitetext[site.locale].timeline.events -%}
-          {%- if align == "right" -%}
-            {%- if event.align and event.align == "left" -%}
-              {%- assign align = "right" -%}
-              <li>
-            {%- else -%}
-              {%- assign align = "left" %}
-              <li class="timeline-inverted">
-            {% endif %}
-          {% else %}
-            {%- if event.align and event.align == "right" -%}
-              {%- assign align = "left" -%}
-              <li class="timeline-inverted">
-            {%- else -%}
-              {%- assign align = "right" %}
-              <li>
-            {% endif %}
-          {%- endif -%}
+      {%- if align == "right" -%}
+        {%- if event.align and event.align == "left" -%}
+          {%- assign align = "right" -%}
+            <li>
+        {%- else -%}
+          {%- assign align = "left" %}
+            <li class="timeline-inverted">
+        {% endif %}
+      {% else %}
+        {%- if event.align and event.align == "right" -%}
+          {%- assign align = "left" -%}
+          <li class="timeline-inverted">
+        {%- else -%}
+          {%- assign align = "right" %}
+          <li>
+        {% endif %}
+      {%- endif -%}
             <div class="timeline-image">
               <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
             </div>
@@ -42,15 +42,20 @@
               </div>
               {%- if event.works -%}
               <div>
-                <p>Projects</p>
-                  <div class="row">
+                <h5 class="project_text">{{ site.data.sitetext[site.locale].timeline.project.text }}</h5>
+                  <div class="row timeline-project-context">
                 {%- for work in event.works -%}
                   {% assign imageFileName = work.image | split: '/' | last %}
                   {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
-                  <div class="col-md-6 col-sm-12">    
+                  {% assign indexMod = forloop.index | modulo: 2%}
+                  {%- if forloop.last and indexMod == 1 and align == "right" -%}  
+                  <div class="col-md-6 col-sm-12 offset-md-6">  
+                  {%- else -%}
+                  <div class="col-md-6 col-sm-12">  
+                  {%- endif -%}
                     <a class="text-muted" data-toggle="modal" href="#{{ work.key }}">
                       <img class="img-fluid" src="{{ work.image }}" alt="">
-                      <span>{{ work.title }} <i class="fa fa-search" aria-hidden="true"></i></span>
+                      <p>{{ work.title }}</p>
                     </a>
                   </div>
                 {% endfor %}	
