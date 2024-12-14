@@ -41,6 +41,8 @@ en: &DEFAULT_EN
             logo: assets/img/skills/python.svg
           - title: "JavaScript"
             logo: assets/img/skills/javascript.svg
+          - title: "Visual Basic"
+            logo: assets/img/skills/vbnet.svg
           - title: "SQL"
             logo: assets/img/skills/sql.svg
           - title: "PL/SQL"
@@ -117,12 +119,12 @@ en: &DEFAULT_EN
         image: assets/img/timeline/pccw.jpeg
         alt:
         works:
-          - title: "Live game show data panel"
-            key: "gamepanel"
+          - title: "Chip In (籌旗) Control Panel"
+            key: "chipin"
             alt:
             image: assets/img/timeline/gamepanel-thumbnail.png
-          - title: "Stock market program data panel"
-            key: "stockpanel"
+          - title: "Invest Smarter (智富通) Control Panel"
+            key: "investsmarter"
             alt:
             image: assets/img/timeline/stockpanel-thumbnail.png
       - title: "Senior Web Developer"

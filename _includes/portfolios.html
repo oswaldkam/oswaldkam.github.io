@@ -32,9 +32,13 @@
                   {%- endfor -%}
                 </ol>
                 <div class="carousel-inner">
-                  {%- for image in portfolio.images.list -%}
+                  {%- for media in portfolio.carousel.list -%}
                   <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
-                    <img src="{{ image.url }}" class="d-block w-100" alt="{{ image.alt }}">
+                    {% if media.type == "image" %}
+                      <img src="{{ media.url }}" class="d-block w-100" alt="{{ media.alt }}">
+                    {% else if media.type == "iframe" %}
+                      {{ media.url }}
+                    {% endif %}
                   </div>
                   {%- endfor -%}
                 </div>
