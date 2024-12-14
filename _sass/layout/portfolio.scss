@@ -82,7 +82,7 @@
 
     .portfolio-skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Maximum of 4 items per row */
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); /* Maximum of 4 items per row */
       gap: 1rem; /* Space between grid items */
       justify-items: center; /* Center items horizontally */
       text-align: center;
@@ -135,5 +135,15 @@
         background-color: $gray-900;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+
+  .skill-item img {
+    max-width: 50px; /* Smaller images for mobile */
   }
 }
