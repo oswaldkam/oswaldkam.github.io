@@ -41,6 +41,10 @@ en: &DEFAULT_EN
             logo: assets/img/skills/python.svg
           - title: "JavaScript"
             logo: assets/img/skills/javascript.svg
+          - title: "HTML"
+            logo: assets/img/skills/html.svg
+          - title: "CSS"
+            logo: assets/img/skills/css.svg
           - title: "Visual Basic"
             logo: assets/img/skills/vbnet.svg
           - title: "SQL"
@@ -66,6 +70,8 @@ en: &DEFAULT_EN
             logo: assets/img/skills/jekyll.svg
           - title: "Flask"
             logo: assets/img/skills/flask.svg
+          - title: "Bootstrap"
+            logo: assets/img/skills/bootstrap.svg
       devops:
         title: "DevOps"
         list:
@@ -122,21 +128,21 @@ en: &DEFAULT_EN
           - title: "Chip In (籌旗) Control Panel"
             key: "chipin"
             alt:
-            image: assets/img/timeline/gamepanel-thumbnail.png
+            image: assets/img/timeline/chipin.png
           - title: "Invest Smarter (智富通) Control Panel"
             key: "investsmarter"
             alt:
-            image: assets/img/timeline/stockpanel-thumbnail.png
+            image: assets/img/timeline/investsmarter.png
       - title: "Senior Web Developer"
         year: "Sep 2017 - Jan 2020"
         desc: ""
         image: assets/img/timeline/esd.png
         alt: image alt text
         works:
-          - title: "Banks's credit card mobile app"
+          - title: "DBS Omni App"
             key: omni
             alt:
-            image: assets/img/timeline/omland-thumbnail.png
+            image: assets/img/timeline/omni.png
          
       - title: "Senior Full Stack Engineer"
         year: "Jun 2020 - Dec 2024"
@@ -144,11 +150,11 @@ en: &DEFAULT_EN
         image: assets/img/timeline/psa.png
         alt:
         works:
-          - title: "Game's config system for Game Engineer"
+          - title: "Game Engineer Config Management System"
             key: "ge"
             alt:
             image: assets/img/timeline/manifest-thumbnail.png
-          - title: "Game's config system for Operation"
+          - title: "Game Daily Operation System"
             key: "ops"
             alt:
             image: assets/img/timeline/lb-thumbnail.png
