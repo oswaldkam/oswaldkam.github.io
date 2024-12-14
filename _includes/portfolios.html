@@ -51,27 +51,27 @@
           </div>
           <div class="row portfolio-info">
             <div class="col-lg-3 offset-lg-2">
-              <p>Date: {{portfolio.projectDate}}</p>
+              <p>Date: <br/>{{portfolio.projectDate}}</p>
             </div>
             <div class="col-lg-3">
-                <p>Client: {{portfolio.company}}</p>
+                <p>Client: <br/>{{portfolio.company}}</p>
             </div>
             <div class="col-lg-2">
-                <p>Category: {{portfolio.category}}</p>
+                <p>Category: <br/>{{portfolio.category}}</p>
             </div>
           </div>
           <div class="portfolio-skills">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <p>Skills:</p>
-                <ul class="portfolio-skills-list">
+                <div class="portfolio-skills-grid">
                   {% for skill in portfolio.skills.list %}
-                    <li>
+                    <div class="skill-item">
                       <img src="{{ skill.url }}" alt="{{ skill.text }}">
                       <span>{{ skill.text }}</span>
-                    </li>
+                    </div>
                   {% endfor %}
-                </ul>
+                </div>
               </div>
             </div>
             

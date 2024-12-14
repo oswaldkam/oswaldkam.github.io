@@ -18,6 +18,7 @@ skills:
       text: SpringBoot
     - url: assets/img/skills/dotnet.svg
       text: ASP.NET
+      
 images:
   list:
     - url: assets/img/portfolios/om_1.png

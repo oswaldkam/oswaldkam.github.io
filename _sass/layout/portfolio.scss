@@ -80,21 +80,12 @@
       cursor: pointer;
     }
 
-    .portfolio-skills-list {
-      display: flex; /* Arrange the items horizontally */
-      list-style: none; /* Remove the default list bullets */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
-      justify-content: center; /* Center the items horizontally */
-      gap: 10px; /* Add spacing between items */
-    }
-
-    .portfolio-skills-list li {
+    .portfolio-skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Maximum of 4 items per row */
+      gap: 1rem; /* Space between grid items */
+      justify-items: center; /* Center items horizontally */
       text-align: center;
-
-      ul > li {
-        display: inline-block;
-      }
 
       img {
         margin-left: auto;
