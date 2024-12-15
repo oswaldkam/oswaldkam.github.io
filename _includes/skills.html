@@ -6,8 +6,8 @@
           <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.title | default: "Tech stack" }}</h2>
         </div>
     </div>
-    {% assign skill_sections = site.data.skills %}
-    {% for section in skill_sections %}
+    {% assign skills = site.data.skills %}
+    {% for section in skills %}
     <div class="row">
         <div class="col-lg-12 text-center skill-title">
           <h3 class="section-heading text-uppercase">{{ section[0] }}</h3>
@@ -18,8 +18,8 @@
         <ul>
           {% for skill in section[1] %}
           <li class="text-muted skill-card">
-            <img class="" src="{{ skill.logo }}" alt="{{ skill.title }}" >
-            <p>{{ skill.title }}</p>
+            <img class="" src="{{ skill[1].logo }}" alt="{{ skill[1].title }}" >
+            <p>{{ skill[1].title }}</p>
           </li>
           {% endfor %}
         </ul>

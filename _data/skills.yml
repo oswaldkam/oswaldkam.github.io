@@ -1,72 +1,105 @@
 languages:
-  - title: "C#"
+  csharp:
+    title: "C#"
     logo: assets/img/skills/csharp.svg
-  - title: "TypeScript"
+  typescript:
+    title: "TypeScript"
     logo: assets/img/skills/typescript.svg
-  - title: "Java"
+  java:
+    title: "Java"
     logo: assets/img/skills/java.svg
-  - title: "Python"
+  python:
+    title: "Python"
     logo: assets/img/skills/python.svg
-  - title: "JavaScript"
+  javascript:
+    title: "JavaScript"
     logo: assets/img/skills/javascript.svg
-  - title: "HTML"
+  html:
+    title: "HTML"
     logo: assets/img/skills/html.svg
-  - title: "CSS"
+  css:
+    title: "CSS"
     logo: assets/img/skills/css.svg
-  - title: "Visual Basic"
+  vbnet:
+    title: "Visual Basic"
     logo: assets/img/skills/vbnet.svg
-  - title: "SQL"
+  sql:
+    title: "SQL"
     logo: assets/img/skills/sql.svg
-  - title: "PL/SQL"
+  plsql:
+    title: "PL/SQL"
     logo: assets/img/skills/plsql.png
 frameworks:
-  - title: ".net"
+  dotnet:
+    title: ".net"
     logo: assets/img/skills/dotnet.svg
-  - title: "ASP.NET"
+  aspnet:
+    title: "ASP.NET"
     logo: assets/img/skills/ms.svg
-  - title: "Spring Boot"
+  springboot:
+    title: "Spring Boot"
     logo: assets/img/skills/springboot.svg
-  - title: "Vue.JS"
+  vuejs:
+    title: "Vue.JS"
     logo: assets/img/skills/vuejs.svg
-  - title: "Node.js"
+  nodejs:
+    title: "Node.js"
     logo: assets/img/skills/nodejs.svg
-  - title: "GraphQL"
+  graphql:
+    title: "GraphQL"
     logo: assets/img/skills/graphql.svg
-  - title: "TensorFlow"
+  tensorflow:
+    title: "TensorFlow"
     logo: assets/img/skills/tensorflow.svg
-  - title: "Jekyll"
+  jekyll:
+    title: "Jekyll"
     logo: assets/img/skills/jekyll.svg
-  - title: "Flask"
+  flask:
+    title: "Flask"
     logo: assets/img/skills/flask.svg
-  - title: "Bootstrap"
+  bootstrap:
+    title: "Bootstrap"
     logo: assets/img/skills/bootstrap.svg
-  - title: "jQuery"
+  jquery:
+    title: "jQuery"
     logo: assets/img/skills/jquery.svg
 devops:
-  - title: "Git"
+  git:
+    title: "Git"
     logo: assets/img/skills/git.svg
-  - title: "GitHub"
+  github:
+    title: "GitHub"
     logo: assets/img/skills/github.svg
-  - title: "Docker"
+  docker:
+    title: "Docker"
     logo: assets/img/skills/docker.svg
-  - title: "Jenkins"
+  jenkins:
+    title: "Jenkins"
     logo: assets/img/skills/jenkins.svg
 databases:
-  - title: "Microsoft SQL Server"
+  sqlserver:
+    title: "Microsoft SQL Server"
     logo: assets/img/skills/sqlserver.svg
-  - title: "Oracle"
+  oracle:
+    title: "Oracle"
     logo: assets/img/skills/oracledb.svg
-  - title: "MongoDB"
+  mongodb:
+    title: "MongoDB"
     logo: assets/img/skills/mongodb.svg
-  - title: "Redis"
+  redis:
+    title: "Redis"
     logo: assets/img/skills/redis.svg
 platforms:
-  - title: "Microsoft Azure"
+  azure:
+    title: "Microsoft Azure"
     logo: assets/img/skills/azure.svg
-  - title: "Amazon Web Services"
+  aws:
+    title: "Amazon Web Services"
     logo: assets/img/skills/aws.svg
 methodologies:
-  - title: "Scrum"
+  scrum:
+    title: "Scrum"
     logo: assets/img/skills/scrum.svg
-  - title: "Kanban"
+  kanban:
+    title: "Kanban"
     logo: assets/img/skills/kanban.svg
