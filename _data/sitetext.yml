@@ -83,7 +83,7 @@ en: &DEFAULT_EN
             logo: assets/img/skills/docker.svg
           - title: "Jenkins"
             logo: assets/img/skills/jenkins.svg
-      dataabses:
+      databases:
         title: "Databases"
         list:
           - title: "SQL Server"

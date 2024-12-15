@@ -6,29 +6,44 @@
 }
 /* Page Section */
 
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.skill-title{
+  margin-top: var(--skill-item-margin-bottom);
   margin-bottom: var(--skill-item-margin-bottom);
 }
+.skill-grid{
+  ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+
+  ul:last-child {
+      display: flex;
+      justify-content: space-evenly; /* Ensures equal space for items in the last row */
+      flex-wrap: wrap; /* Allows wrapping for smaller screen sizes */
+  }
+  margin-bottom: var(--skill-item-margin-bottom);
+} 
+
 
 .skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   text-align: center;
+  padding: 1rem;
   height: var(--skill-card-height);
 
   img {
-    min-width: var(--skill-logo-width);
-    max-width: var(--skill-logo-width);
-    max-height: var(--skill-logo-height);
-    margin-top: auto;
-    margin-bottom: auto;
-    height: auto;
-    width: auto;
+    width: var(--skill-logo-width);
+    height: var(--skill-logo-height);
+    object-fit: contain; /* Ensures proper scaling of the logo */
+    margin: 0 auto; /* Center the image within the card */
   }
   p {
     margin-bottom: 0;

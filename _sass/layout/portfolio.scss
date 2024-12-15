@@ -87,7 +87,7 @@
 
     .portfolio-skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); /* Maximum of 4 items per row */
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Maximum of 4 items per row */
       gap: 1rem; /* Space between grid items */
       justify-items: center; /* Center items horizontally */
       text-align: center;
