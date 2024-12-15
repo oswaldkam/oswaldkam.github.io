@@ -1,14 +1,3 @@
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
-
-# English (default)
-# -----------------
 en: &DEFAULT_EN
   header:
     title: Welcome
@@ -35,71 +24,68 @@ en: &DEFAULT_EN
       platforms: *platforms
       methodologies: *methodologies
 
+  org: 
+    languages: *test
+
   timeline:
     title: "Timeline"
     text: "It's about my work experience"
     section: timeline
     project:
         text: Works showcase
-    events:
-      - title: "Hong Kong Metropolitan University"
+    organizations:
+      hkmu:
         year: "Sep 2011 - Aug 2014"
         desc: "Graduated with a Bachelor of Computing in Internet Technology in first class honours"
-        image: assets/img/timeline/hkmu.png
-        alt:
-      - title: "Programmer"
+      pccw:
+        position: Programmer
         year: "Nov 2014 - Oct 2017"
         desc: ""
-        image: assets/img/timeline/pccw.jpeg
-        alt:
         works:
           - title: "Chip In (籌旗) Control Panel"
             key: "chipin"
             alt:
-            image: assets/img/timeline/chipin.png
+            image: assets/img/timeline_thumbnail/chipin.png
           - title: "Invest Smarter (智富通) Control Panel"
             key: "investsmarter"
             alt:
-            image: assets/img/timeline/investsmarter.png
-      - title: "Senior Web Developer"
+            image: assets/img/timeline_thumbnail/investsmarter.png
+        align: right
+      esd:
+        position: "Senior Web Developer"
         year: "Sep 2017 - Jan 2020"
         desc: ""
-        image: assets/img/timeline/esd.png
-        alt: image alt text
         works:
           - title: "DBS Omni App"
             key: omni
             alt:
-            image: assets/img/timeline/omni.png
-         
-      - title: "Senior Full Stack Engineer"
+            image: assets/img/timeline_thumbnail/omni.png
+      psa:
+        position: "Senior Full Stack Engineer"
         year: "Jun 2020 - Dec 2024"
         desc: ""
-        image: assets/img/timeline/psa.png
+        image: assets/img/timeline_thumbnail/psa.png
         alt:
         works:
           - title: "Game Engineer Config Management System"
             key: "ge"
             alt:
-            image: assets/img/timeline/manifest-thumbnail.png
+            image: assets/img/timeline_thumbnail/manifest-thumbnail.png
           - title: "Game Daily Operation System"
             key: "ops"
             alt:
-            image: assets/img/timeline/lb-thumbnail.png
+            image: assets/img/timeline_thumbnail/lb-thumbnail.png
         align: right
-      - title: "Professional Scrum Master"
+      scrum:
         year: "Jan 2021"
         desc: "Got Professional Scrum Master I certification"
-        image: assets/img/timeline/psm.png
         alt:
         align: left
-      - title: "Centennial College"
+      centennialcolelge:
         year: "Jan 2023 - Aug 2024"
         desc: "Graduated with a Advance Diploma in Software Engineering - Artificial Intelligence (Fast Track - FT) in high honours"
-        image: assets/img/timeline/centennial.jpeg
         alt:
         align: left
-    end: ""
 
   contact:
     title: "Send me a message"
