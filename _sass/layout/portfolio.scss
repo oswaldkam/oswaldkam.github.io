@@ -59,6 +59,11 @@
         /* Highlighted color for the active dot */
       }
     }
+    .carousel-item > iframe{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
 
     .carousel-inner img {
       max-height: 400px;
@@ -134,6 +139,12 @@
         transform: rotate(90deg);
         background-color: $gray-900;
       }
+    }
+  }
+
+  .portfolio-client{
+    img{
+      max-width: 100px;
     }
   }
 }
