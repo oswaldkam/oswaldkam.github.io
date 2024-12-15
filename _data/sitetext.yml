@@ -27,85 +27,13 @@ en: &DEFAULT_EN
 
   skills:
     title: "Tech stack"
-    section:
-      languages:
-        title: "Languages"
-        list:
-          - title: "C#"
-            logo: assets/img/skills/csharp.svg
-          - title: "TypeScript"
-            logo: assets/img/skills/typescript.svg
-          - title: "Java"
-            logo: assets/img/skills/java.svg
-          - title: "Python"
-            logo: assets/img/skills/python.svg
-          - title: "JavaScript"
-            logo: assets/img/skills/javascript.svg
-          - title: "HTML"
-            logo: assets/img/skills/html.svg
-          - title: "CSS"
-            logo: assets/img/skills/css.svg
-          - title: "Visual Basic"
-            logo: assets/img/skills/vbnet.svg
-          - title: "SQL"
-            logo: assets/img/skills/sql.svg
-          - title: "PL/SQL"
-            logo: assets/img/skills/plsql.png
-      frameworks:
-        title: "Frameworks"
-        list:
-          - title: ".net"
-            logo: assets/img/skills/dotnet.svg
-          - title: "Spring Boot"
-            logo: assets/img/skills/springboot.svg
-          - title: "Vue.JS"
-            logo: assets/img/skills/vuejs.svg
-          - title: "Node.js"
-            logo: assets/img/skills/nodejs.svg
-          - title: "GraphQL"
-            logo: assets/img/skills/graphql.svg
-          - title: "TensorFlow"
-            logo: assets/img/skills/tensorflow.svg
-          - title: "Jekyll"
-            logo: assets/img/skills/jekyll.svg
-          - title: "Flask"
-            logo: assets/img/skills/flask.svg
-          - title: "Bootstrap"
-            logo: assets/img/skills/bootstrap.svg
-      devops:
-        title: "DevOps"
-        list:
-          - title: "Git"
-            logo: assets/img/skills/git.svg
-          - title: "GitHub"
-            logo: assets/img/skills/github.svg
-          - title: "Docker"
-            logo: assets/img/skills/docker.svg
-          - title: "Jenkins"
-            logo: assets/img/skills/jenkins.svg
-      databases:
-        title: "Databases"
-        list:
-          - title: "SQL Server"
-            logo: assets/img/skills/sqlserver.svg
-          - title: "Oracle"
-            logo: assets/img/skills/oracledb.svg
-          - title: "MongoDB"
-            logo: assets/img/skills/mongodb.svg
-      platforms:
-        title: "Cloud Platforms"
-        list:
-          - title: "Microsoft Azure"
-            logo: assets/img/skills/azure.svg
-          - title: "Amazon Web Services"
-            logo: assets/img/skills/aws.svg
-      methodologies:
-        title: "Methodologies"
-        list:
-          - title: "Scrum"
-            logo: assets/img/skills/scrum.svg
-          - title: "Kanban"
-            logo: assets/img/skills/kanban.svg
+    sections:
+      languages: *languages
+      frameworks: *frameworks
+      devops: *devops
+      databases: *databases
+      platforms: *platforms
+      methodologies: *methodologies
 
   timeline:
     title: "Timeline"
