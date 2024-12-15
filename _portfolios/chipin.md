@@ -2,7 +2,9 @@
 key: chipin
 title: Chip In (籌旗) Control Panel
 projectDate: 2016
-company: viuTV
+company:
+  name: viu TV
+  image: assets/img/timeline/viu.svg
 category: Dev
 skills:
   list:
@@ -25,8 +27,19 @@ carousel:
       alt:
       type: image
 ---
-The control panel is a specialized application designed for managing interactive elements for a live TV show [Chip In (籌旗)](https://www.facebook.com/ViuTV.chipin). It integrates seamlessly with Vizrt CG servers via APIs to control and display dynamic visual content, including real-time voting statistics and jackpot results. Statistical and jackpot data are processed by separate applications managed by other teams and fetched through APIs for precise on-screen visualization.
+A specialized application developed for managing interactive elements during live broadcasts of Chip In, a dynamic live TV show. The control panel integrates with Vizrt CG servers via APIs to control and display real-time visual content, including live voting results and jackpot statistics. Statistical and jackpot data are processed by external applications managed by other teams and retrieved through APIs to ensure precise and accurate on-screen representation.
 
-The program dynamically calculates and updates visual elements, such as bar chart heights, based on the fetched data, ensuring accurate and engaging displays. Production Assistants have intuitive control over the visibility of CG elements, allowing them to toggle displays with a single button click for maximum flexibility during live broadcasts.
+#### Key Features/Capabilities: 
+- **Dynamic Visualization: **
+  - Automatically calculates and updates, for example, the height of bar charts based on live data fetched from APIs. 
+  - Ensures engaging and accurate visual displays that enhance viewer interaction during a live broadcast. 
 
-Designed for mission-critical operations, the system utilizes dual-redundant satellite and fiber connections to guarantee uninterrupted performance, ensuring a seamless and reliable experience for viewers. This tailored solution provides robust tools for managing live, interactive broadcasts with precision and efficiency.
+- **Intuitive Control to Production Teams:**
+  - A user-friendly interface provides Production Assistants with one-click button operations to turn the CG elements on and off.  
+  - Maximizes flexibility in managing on-screen elements in real time.  -
+
+- **Mission-Critical Reliability:** 
+  - Engineered with dual-redundant satellite and fiber links for failure-free live productions.
+  - Provides a smooth, error-free experience for the audience in high-pressure, live production situations. 
+
+This customized solution provides the production teams with powerful, efficient means of managing live, interactive broadcasts with accuracy and reliability in creating an engaging experience for viewers.

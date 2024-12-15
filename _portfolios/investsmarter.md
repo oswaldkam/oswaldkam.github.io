@@ -2,7 +2,9 @@
 key: investsmarter
 title: Invest Smarter (智富通) Control Panel
 projectDate: 2016
-company: viuTV
+company:
+  name: viu TV
+  image: assets/img/timeline/viu.svg
 category: Dev
 skills:
   list:
@@ -25,10 +27,21 @@ carousel:
       type: image
 
 ---
-A mission-critical application developed for live broadcast program - [Invest Smarter (智富通)](https://viu.tv/encore/invest-smarter), a financial TV program. It empowers Production Assistants (PAs) to control and customize on-screen content in real-time, delivering accurate and engaging information during live broadcasts.
+A mission-critical application developed for the live broadcast program [Invest Smarter (智富通)](https://viu.tv/encore/invest-smarter), a financial TV show. The application provides the Production Assistants (PAs) with a way to control and customize what is on-screen in real-time, giving accurate and compelling information during live broadcasts.
 
-Due to restrictions from the Hong Kong Exchange, the program does not connect directly to stock data providers. Instead, all stock price data and related financial and industry-specific information are delivered in XML format through the data provider's program. The Control Panel reads and parses this XML data to update CG elements dynamically, including rolling tickers, stock highlights, industry sectors, announcements, and news summaries.
+#### **Key Features and Capabilities:** 
+- **XML Data Integration:**
+  - Processes stock price data and related financial or industry-specific information provided in XML format by the program of the data provider, ensuring that the result does not violate any restrictions set by the Hong Kong Exchange.  
+  - Dynamically updates CG elements, including rolling tickers, stock highlights, industry sectors, announcements, and news summaries.  
 
-With its intuitive design and robust functionality, the application allows for seamless editing and management of display content. Tailored for the demands of live broadcasting, it ensures reliability, compliance, and a polished viewing experience for audiences.
+- **Intuitive Content Management:**
+  - Provides a user-friendly interface for seamless editing and management of display content in rea- time.  
+  - Ensures that the visual presentation is accurate and appealing, prepared for live broadcasting.  \
+
+- **Reliability and Compliance:**  
+  - Created to meet the high demand of live TV productions with the assurance of providing an uninterrupted and polished viewing experience.
+  - Adheres to industry regulations with robust functionality for financial data presentation. 
+
+This custom solution supports production teams with reliable, efficient tools for live broadcasts, and enables precision, compliance, and viewer engagement.
 
 
