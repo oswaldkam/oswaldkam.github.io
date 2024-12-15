@@ -2,9 +2,7 @@
 key: ge
 title: Mobile game's config management system for game engineer
 projectDate: 2020 - 2024
-company:
-  name: Playstudios
-  image: assets/img/timeline/psa.png
+company: psa
 category: Dev, Design
 
 carousel:

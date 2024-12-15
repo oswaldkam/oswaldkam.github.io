@@ -2,9 +2,7 @@
 key: chipin
 title: Chip In (籌旗) Control Panel
 projectDate: 2016
-company:
-  name: viu TV
-  image: assets/img/timeline/viu.svg
+company: viutv
 category: Dev
 skills:
   list:

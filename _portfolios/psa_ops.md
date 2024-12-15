@@ -2,9 +2,7 @@
 key: ops
 title: Mobile app for credit card of a Hongkong's bank
 projectDate: 2022 - 2024
-company:
-  name: Playstudios
-  image: assets/img/timeline/psa.png
+company: psa
 category: Dev, Design
 
 carousel:

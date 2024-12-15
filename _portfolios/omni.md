@@ -2,9 +2,7 @@
 key: omni
 title: Developement of credit card app - DBS Omni
 projectDate: 2017 - 2020
-company:
-  name: DBS Bank (Hong Kong)
-  image: assets/img/timeline/dbs.svg
+company: dbsbank
 category: Dev
 skills:
   list:

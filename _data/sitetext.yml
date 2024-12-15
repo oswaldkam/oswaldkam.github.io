@@ -24,9 +24,6 @@ en: &DEFAULT_EN
       platforms: *platforms
       methodologies: *methodologies
 
-  org: 
-    languages: *test
-
   timeline:
     title: "Timeline"
     text: "It's about my work experience"
