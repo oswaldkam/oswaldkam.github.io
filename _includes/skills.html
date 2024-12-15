@@ -6,109 +6,25 @@
           <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.title | default: "Tech stack" }}</h2>
         </div>
     </div>
+    {% assign skill_sections = site.data.skills %}
+    {% for section in skill_sections %}
     <div class="row">
         <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.languages.title | default: "Languages" }}</h3>
+          <h3 class="section-heading text-uppercase">{{ section[0] }}</h3>
         </div>
-      </div>
+    </div>
     <div class="row skill-grid text-center justify-content-center">
       <div class="col-lg-8">
         <ul>
-          {% for language in site.data.sitetext[site.locale].skills.section.languages.list %}
+          {% for skill in section[1] %}
           <li class="text-muted skill-card">
-            <img class="" src="{{ language.logo }}" alt="{{ language.title }}" >
-            <p>{{ language.title }}</p>
+            <img class="" src="{{ skill.logo }}" alt="{{ skill.title }}" >
+            <p>{{ skill.title }}</p>
           </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-     <div class="row">
-        <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.framrworks.title | default: "Frameworks" }}</h3>
-        </div>
-      </div>
-    <div class="row skill-grid text-center justify-content-center">
-      <div class="col-lg-8">
-        <ul >
-          {% for framework in site.data.sitetext[site.locale].skills.section.frameworks.list %}
-          <li class="text-muted skill-card">
-            <img class="" src="{{ framework.logo }}" alt="{{ framework.title }}" >
-            <p>{{ framework.title }}</p>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.databases.title | default: "Databases" }}</h3>
-        </div>
-      </div>
-    <div class="row skill-grid text-center justify-content-center">
-      <div class="col-lg-8">
-        <ul>
-          {% for database in site.data.sitetext[site.locale].skills.section.databases.list %}
-          <li class="text-muted skill-card">
-            <img class="" src="{{ database.logo }}" alt="{{ database.title }}" >
-            <p>{{ database.title }}</p>
-          </li>
-          {% endfor %}
-      </ul>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.devops.title | default: "DevOps" }}</h3>
-        </div>
-      </div>
-    <div class="row skill-grid text-center justify-content-center">
-      <div class="col-lg-8">
-        <ul>
-          {% for devops in site.data.sitetext[site.locale].skills.section.devops.list %}
-          <li class="text-muted skill-card">
-            <img class="" src="{{ devops.logo }}" alt="{{ devops.title }}" >
-            <p>{{ devops.title }}</p>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.platforms.title | default: "Platforms" }}</h3>
-        </div>
-      </div>
-    <div class="row skill-grid text-center justify-content-center">
-      <div class="col-lg-8">
-        <ul>
-          {% for platform in site.data.sitetext[site.locale].skills.section.platforms.list %}
-          <li class="text-muted skill-card">
-            <img class="" src="{{ platform.logo }}" alt="{{ platform.title }}" >
-            <p>{{ platform.title }}</p>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center skill-title">
-          <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.methodologies.title | default: "Methodologies" }}</h3>
-        </div>
-      </div>
-     <div class="row skill-grid text-center justify-content-center">
-      <div class="col-lg-8">
-        <ul>
-          {% for methodolog in site.data.sitetext[site.locale].skills.section.methodologies.list %}
-          <li class="text-muted skill-card">
-            <img class="" src="{{ methodolog.logo }}" alt="{{ methodolog.title }}" >
-            <p>{{ methodolog.title }}</p>
-          </li>
-          {% endfor %}
-      </ul>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
 </section>
 <!-- End Skills -->
