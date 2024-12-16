@@ -23,24 +23,34 @@ carousel:
       desc:
       alt:
       type: image
+
 skills:
-  list:
-    - url: assets/img/skills/csharp.svg
-      text: C#
-    - url: assets/img/skills/javascript.svg
-      text: JavaScript
-    - url: assets/img/skills/sqlserver.svg
-      text: Microsoft SQL
-    - url: assets/img/skills/java.svg
-      text: Java
-    - url: assets/img/skills/springboot.svg
-      text: SpringBoot
-    - url: assets/img/skills/dotnet.svg
-      text: ASP.NET
-    - url: assets/img/skills/html.svg
-      text: HTML
-    - url: assets/img/skills/css.svg
-      text: CSS
+  languages:
+    csharp:
+    typescript:
+    javascript:
+    sql:
+    html:
+    css:
+  frameworks:
+    dotnet:
+    vuejs:
+    graphql:
+    springboot:
+    bootstrap:
+  devops:
+    docker:
+    git:
+    github:
+    jenkins:
+  platforms:
+    azure:
+  databases:
+    sqlserver:
+    redis:
+  methodologies:
+    scrum:
+    kanban:
 ---
 Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
 

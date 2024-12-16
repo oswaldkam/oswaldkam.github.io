@@ -5,23 +5,26 @@ projectDate: 2017 - 2020
 company: dbsbank
 category: Dev
 skills:
-  list:
-    - url: assets/img/skills/csharp.svg
-      text: C#
-    - url: assets/img/skills/javascript.svg
-      text: JavaScript
-    - url: assets/img/skills/sqlserver.svg
-      text: Microsoft SQL
-    - url: assets/img/skills/java.svg
-      text: Java
-    - url: assets/img/skills/springboot.svg
-      text: SpringBoot
-    - url: assets/img/skills/dotnet.svg
-      text: ASP.NET
-    - url: assets/img/skills/html.svg
-      text: HTML
-    - url: assets/img/skills/css.svg
-      text: CSS
+  languages:
+    csharp:
+    javascript:
+    java:
+    sql:
+    html:
+    css:
+  frameworks:
+    dotnet:
+    aspnet:
+    springboot:
+    jquery:
+  devops:
+    git:
+    docker:
+    jenkins:
+  databases:
+    sqlserver:
+  methodologies:
+    scrum:
       
 carousel:
   list:

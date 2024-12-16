@@ -5,13 +5,15 @@ projectDate: 2016
 company: viutv
 category: Dev
 skills:
-  list:
-    - url: assets/img/skills/vbnet.svg
-      text: VB.net
-    - url: assets/img/skills/sqlserver.svg
-      text: Microsoft SQL
-    - url: assets/img/skills/dotnet.svg
-      text: .net
+  languages:
+    vbnet:
+    sql:
+  frameworks:
+    dotnet:
+    jquery:
+    bootstrap:
+  databases:
+    sqlserver:
 
 carousel:
   list:
