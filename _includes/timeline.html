@@ -51,21 +51,26 @@
               <div>
                 <h5 class="project_text">{{ site.data.sitetext[site.locale].timeline.project.text }}</h5>
                   <div class="row timeline-project-context">
-                {%- for work in orgData.works -%}
-                  {% assign imageFileName = work.image | split: '/' | last %}
-                  {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
-                  {% assign indexMod = forloop.index | modulo: 2%}
-                  {%- if forloop.last and indexMod == 1 and align == "right" -%}  
-                  <div class="col-md-6 col-sm-12 offset-md-6">  
-                  {%- else -%}
-                  <div class="col-md-6 col-sm-12">  
-                  {%- endif -%}
-                    <a class="text-muted" data-toggle="modal" href="#{{ work.key }}">
-                      <img class="img-fluid" src="{{ work.image }}" alt="">
-                      <p>{{ work.title }}</p>
-                    </a>
-                  </div>
-                {% endfor %}	
+                    <div class="col-md-12">
+                      <ul >
+                      {%- for work in orgData.works -%}
+                      {% assign imageFileName = work.image | split: '/' | last %}
+                      {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
+                      {% assign indexMod = forloop.index | modulo: 2%}
+                      {%- if forloop.last and indexMod == 1 and align == "right" -%}  
+                      <li class="timeline-project-list-align-right">  
+                      {%- else -%}
+                      <li class="">  
+                      {%- endif -%}
+                        <a class="text-muted" data-toggle="modal" href="#{{ work.key }}">
+                          <img class="img-fluid" src="{{ work.image }}" alt="">
+                          <p>{{ work.title }}</p>
+                        </a>
+                      </li>
+                      {% endfor %}	
+                      </ul>
+                    </div>
+                    
                 </div>
               </div>
               {%- endif -%}
