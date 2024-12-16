@@ -36,7 +36,7 @@ A mission-critical application developed for the live broadcast program [Invest 
 
 - **Intuitive Content Management:**
   - Provides a user-friendly interface for seamless editing and management of display content in rea- time.  
-  - Ensures that the visual presentation is accurate and appealing, prepared for live broadcasting.  \
+  - Ensures that the visual presentation is accurate and appealing, prepared for live broadcasting.
 
 - **Reliability and Compliance:**  
   - Created to meet the high demand of live TV productions with the assurance of providing an uninterrupted and polished viewing experience.
