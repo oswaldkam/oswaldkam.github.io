@@ -86,19 +86,34 @@
     }
 
     .portfolio-skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Maximum of 4 items per row */
-      gap: 1rem; /* Space between grid items */
-      justify-items: center; /* Center items horizontally */
-      text-align: center;
-
-      img {
+      ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 3rem;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      ul:last-child {
+          display: flex;
+          justify-content: space-evenly; /* Ensures equal space for items in the last row */
+          flex-wrap: wrap; /* Allows wrapping for smaller screen sizes */
+      }
+
+      img {
+        margin: auto;
         display: block; /* Remove inline spacing issues */
         min-width: var(--skill-logo-width);
         max-width: var(--skill-logo-width);
         max-height: var(--skill-logo-height);
+        width: var(--skill-logo-width);
+        height: var(--skill-logo-height);
+        object-fit: contain; /* Ensures proper scaling of the logo */
+        vertical-align: middle;
       }
     }
   }

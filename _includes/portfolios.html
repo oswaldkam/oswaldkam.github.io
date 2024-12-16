@@ -69,18 +69,20 @@
               <div class="col-lg-8 mx-auto">
                 <p><strong>Skills:</strong></p>
                 <div class="portfolio-skills-grid">
-                  {% for skill_category in portfolio.skills %}
-                  {% assign category_name = skill_category[0] %}
-                  {% assign skill_keys = skill_category[1] %}
-                  {% for skill_hash in skill_keys %}
+                  <ul>
+                    {% for skill_category in portfolio.skills %}
+                    {% assign category_name = skill_category[0] %}
+                    {% assign skill_keys = skill_category[1] %}
+                    {% for skill_hash in skill_keys %}
                     {% assign skill_key = skill_hash | first %}
                     {% assign skill_data = site.data.skills[category_name][skill_key] %}
-                    <div class="skill-item">
+                    <li class="skill-item">
                         <img src="{{ skill_data.logo }}" alt="{{ skill_data.title }}" class="img-fluid">
                         <span>{{ skill_data.title }}</span>
-                      </div>
+                    </li>
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
+                  </ul>
                 </div>
               </div>
             </div>
