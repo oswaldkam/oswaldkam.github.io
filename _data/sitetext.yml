@@ -86,6 +86,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Send me a message"
+    text: ""
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
