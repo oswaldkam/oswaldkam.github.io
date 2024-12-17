@@ -1,6 +1,14 @@
 :root {
   --skill-logo-width: 5rem;
   --skill-logo-height: 5rem;
+  --skill-grid-gap:3rem;
+  --skill-grid-columns-repeat:10rem;
+
+  --skill-logo-mobile-width: 4rem;
+  --skill-logo-mobile-height: 4rem;
+  --skill-grid-mobile-gap:1rem;
+  --skill-grid-mobile-columns-repeat:5rem;
+  
   --skill-card-height: 7rem;
   --skill-item-margin-bottom: 2rem;
 }
@@ -13,8 +21,8 @@
 .skill-grid {
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(var(--skill-grid-mobile-columns-repeat), 1fr));
+    gap: var(--skill-grid-mobile-gap);
     justify-items: center;
     justify-content: center;
     text-align: center;
@@ -52,7 +60,8 @@
 @media (min-width: 768px) {
   .skill-grid {
     ul {
-      gap: 1rem;
+      gap: var(--skill-grid-mobile-gap);
+      grid-template-columns: repeat(auto-fit, minmax(var(--skill-grid-columns-repeat), 1fr));
     }
   }
   .skill-title {
