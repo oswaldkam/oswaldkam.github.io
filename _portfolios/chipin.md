@@ -30,7 +30,7 @@ carousel:
 A specialized application developed for managing interactive elements during live broadcasts of Chip In, a dynamic live TV show. The control panel integrates with Vizrt CG servers via APIs to control and display real-time visual content, including live voting results and jackpot statistics. Statistical and jackpot data are processed by external applications managed by other teams and retrieved through APIs to ensure precise and accurate on-screen representation.
 
 #### Key Features/Capabilities: 
-- **Dynamic Visualization: **
+- **Dynamic Visualization:**
   - Automatically calculates and updates, for example, the height of bar charts based on live data fetched from APIs. 
   - Ensures engaging and accurate visual displays that enhance viewer interaction during a live broadcast. 
 
