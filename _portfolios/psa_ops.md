@@ -50,10 +50,37 @@ skills:
     scrum:
     kanban:
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+### Internal System for Config Support
 
-{:.list-inline}
-- Date: January 2017
-- Client: Finish
-- Category: Identity
+#### Overview
 
+This internal system extends the functionality of the config management System, specifically supporting the daily operations of product managers and business analysts. It simplifies the process of creating and managing JSON configurations by allowing users to upload Excel files and convert them into configuration files without requiring knowledge of game logic.
+
+#### Key Features
+
+**Excel to JSON Conversion**  
+- Users prepare Excel files with required fields such as monetization design, data analysis, and other parameters.  
+- A streamlined process allows frequent updates for scenarios like holidays, DAU changes, or shifting targets.  
+- Game engineers write TypeScript scripts to convert Excel files into JSON configurations, executed in a worker for efficiency.  
+- Users can enable, disable, or schedule Excel file uploads to meet operational needs.  
+
+**Config Deployment Scheduling**  
+- Users can schedule the deployment of configurations, enabling a more flexible and efficient workflow.  
+
+**A/B Testing and Segmentation**  
+- Enables users to create product-level A/B tests and segments.  
+- Supports greater variety in configuration combinations tailored to diverse user groups.  
+
+**GraphQL Integration**  
+- Leverages GraphQL to fetch data from the config management system with multiple parameters.  
+- Enhances frontend capabilities by allowing selection of required fields and logical operations in queries.  
+
+#### Usage
+
+The system empowers non-technical users, such as product managers and business analysts, to:  
+- Automate configuration updates through Excel uploads.  
+- Experiment with various product setups through A/B tests and segments.  
+- Schedule configuration deployments for improved workflow flexibility.  
+- Collaborate effectively with game engineers for script development and data conversion.  
+
+By reducing manual efforts and increasing operational efficiency, this system bridges the gap between data preparation and game logic implementation, streamlining workflows for game-related configurations.
