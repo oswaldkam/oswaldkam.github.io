@@ -34,7 +34,7 @@ carousel:
       type: iframe
 ---
 
-Contributed to the development of DBS Omni, a pioneering mobile app recognized as the first of its kind in Hong Kong and leading credit card management platform in Asia, later rebranded as Card+. The application provided users with advanced features such as balance and reward tracking, credit card limit management, and instant approvals, setting a new standard for digital credit card services in the region.
+Contributed to the development of DBS Omni, a pioneering mobile app recognized as the first of its kind in Hong Kong and a leading credit card management platform in Asia, later rebranded as Card+. The application provided users with advanced features such as balance and reward tracking, credit card limit management, and instant approvals, setting a new standard for digital credit card services in the region.
 #### Key Achievements and Contributions:  
 
 - **Online Credit Card Application System:**

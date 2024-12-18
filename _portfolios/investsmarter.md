@@ -35,13 +35,11 @@ A mission-critical application developed for the live broadcast program [Invest 
   - Dynamically updates CG elements, including rolling tickers, stock highlights, industry sectors, announcements, and news summaries.  
 
 - **Intuitive Content Management:**
-  - Provides a user-friendly interface for seamless editing and management of display content in rea- time.  
-  - Ensures that the visual presentation is accurate and appealing, prepared for live broadcasting.
+  - Provides a user-friendly interface for seamless editing and management of display content in real time.  
+  - Ensures that the visual presentation is accurate and appealing, and prepared for live broadcasting.
 
 - **Reliability and Compliance:**  
-  - Created to meet the high demand of live TV productions with the assurance of providing an uninterrupted and polished viewing experience.
+  - Created to meet the high demand for live TV productions with the assurance of providing an uninterrupted and polished viewing experience.
   - Adheres to industry regulations with robust functionality for financial data presentation. 
 
 This custom solution supports production teams with reliable, efficient tools for live broadcasts, and enables precision, compliance, and viewer engagement.
-
-

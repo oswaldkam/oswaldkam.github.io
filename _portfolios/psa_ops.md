@@ -54,14 +54,14 @@ skills:
 
 #### Overview
 
-This internal system extends the functionality of the config management System, specifically supporting the daily operations of product managers and business analysts. It simplifies the process of creating and managing JSON configurations by allowing users to upload Excel files and convert them into configuration files without requiring knowledge of game logic.
+This internal system extends the functionality of the configuration management system, specifically supporting the daily operations of product managers and business analysts. It simplifies the process of creating and managing JSON configurations by allowing users to upload Excel files and convert them into configuration files without requiring knowledge of game logic.
 
 #### Key Features
 
 **Excel to JSON Conversion**  
 - Users prepare Excel files with required fields such as monetization design, data analysis, and other parameters.  
 - A streamlined process allows frequent updates for scenarios like holidays, DAU changes, or shifting targets.  
-- Game engineers write TypeScript scripts to convert Excel files into JSON configurations, executed in a worker for efficiency.  
+- Game engineers write TypeScript scripts to convert Excel files into JSON configurations, which are executed by a worker for efficiency.  
 - Users can enable, disable, or schedule Excel file uploads to meet operational needs.  
 
 **Config Deployment Scheduling**  
