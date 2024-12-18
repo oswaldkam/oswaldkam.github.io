@@ -35,8 +35,6 @@ skills:
   frameworks:
     dotnet:
     vuejs:
-    graphql:
-    springboot:
     bootstrap:
   devops:
     docker:
