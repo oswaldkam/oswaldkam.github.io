@@ -1,0 +1,30 @@
+<!-- Skills -->
+<section class="page-section" id="{{ site.data.sitetext[site.locale].skills.section.language | default: "skills" }}">
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center skill-title">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].skills.title | default: "Tech stack" }}</h2>
+        </div>
+    </div>
+    {% assign skills = site.data.skills %}
+    {% for section in skills %}
+    <div class="row">
+        <div class="col-lg-12 text-center skill-title">
+          <h3 class="section-heading text-uppercase">{{ section[0] }}</h3>
+        </div>
+    </div>
+    <div class="row skill-grid text-center justify-content-center">
+      <div class="col-lg-8">
+        <ul>
+          {% for skill in section[1] %}
+          <li class="text-muted skill-card">
+            <img class="" src="{{ skill[1].logo }}" alt="{{ skill[1].title }}" >
+            <p>{{ skill[1].title }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+</section>
+<!-- End Skills -->

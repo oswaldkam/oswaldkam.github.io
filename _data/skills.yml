@@ -1,0 +1,105 @@
+languages:
+  csharp:
+    title: "C#"
+    logo: assets/img/skills/csharp.svg
+  typescript:
+    title: "TypeScript"
+    logo: assets/img/skills/typescript.svg
+  java:
+    title: "Java"
+    logo: assets/img/skills/java.svg
+  python:
+    title: "Python"
+    logo: assets/img/skills/python.svg
+  javascript:
+    title: "JavaScript"
+    logo: assets/img/skills/javascript.svg
+  html:
+    title: "HTML"
+    logo: assets/img/skills/html.svg
+  css:
+    title: "CSS"
+    logo: assets/img/skills/css.svg
+  vbnet:
+    title: "Visual Basic"
+    logo: assets/img/skills/vbnet.svg
+  sql:
+    title: "SQL"
+    logo: assets/img/skills/sql.svg
+  plsql:
+    title: "PL/SQL"
+    logo: assets/img/skills/plsql.png
+frameworks:
+  dotnet:
+    title: ".net"
+    logo: assets/img/skills/dotnet.svg
+  aspnet:
+    title: "ASP.NET"
+    logo: assets/img/skills/ms.svg
+  springboot:
+    title: "Spring Boot"
+    logo: assets/img/skills/springboot.svg
+  vuejs:
+    title: "Vue.JS"
+    logo: assets/img/skills/vuejs.svg
+  nodejs:
+    title: "Node.js"
+    logo: assets/img/skills/nodejs.svg
+  graphql:
+    title: "GraphQL"
+    logo: assets/img/skills/graphql.svg
+  tensorflow:
+    title: "TensorFlow"
+    logo: assets/img/skills/tensorflow.svg
+  jekyll:
+    title: "Jekyll"
+    logo: assets/img/skills/jekyll.svg
+  flask:
+    title: "Flask"
+    logo: assets/img/skills/flask.svg
+  bootstrap:
+    title: "Bootstrap"
+    logo: assets/img/skills/bootstrap.svg
+  jquery:
+    title: "jQuery"
+    logo: assets/img/skills/jquery.svg
+devops:
+  git:
+    title: "Git"
+    logo: assets/img/skills/git.svg
+  github:
+    title: "GitHub"
+    logo: assets/img/skills/github.svg
+  docker:
+    title: "Docker"
+    logo: assets/img/skills/docker.svg
+  jenkins:
+    title: "Jenkins"
+    logo: assets/img/skills/jenkins.svg
+databases:
+  sqlserver:
+    title: "Microsoft SQL Server"
+    logo: assets/img/skills/sqlserver.svg
+  oracle:
+    title: "Oracle"
+    logo: assets/img/skills/oracledb.svg
+  mongodb:
+    title: "MongoDB"
+    logo: assets/img/skills/mongodb.svg
+  redis:
+    title: "Redis"
+    logo: assets/img/skills/redis.svg
+platforms:
+  azure:
+    title: "Microsoft Azure"
+    logo: assets/img/skills/azure.svg
+  aws:
+    title: "Amazon Web Services"
+    logo: assets/img/skills/aws.svg
+methodologies:
+  scrum:
+    title: "Scrum"
+    logo: assets/img/skills/scrum.svg
+  kanban:
+    title: "Kanban"
+    logo: assets/img/skills/kanban.svg

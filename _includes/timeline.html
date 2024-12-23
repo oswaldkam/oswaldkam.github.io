@@ -1,0 +1,86 @@
+<!-- Timeline -->
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].timeline.title | markdownify | default: "About" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].timeline.text | default: "timeline"}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+    {%- assign align = site.data.sitetext[site.locale].timeline.start_align -%}
+    {%- assign organizations = site.data.sitetext[site.locale].timeline.organizations -%}
+    {%- for org in organizations -%}
+    {%- assign orgName = org[0] -%}
+    {%- assign orgData = org[1] -%}
+      {%- if align == "right" -%}
+        {%- if org.align and org.align == "left" -%}
+          {%- assign align = "right" -%}
+            <li>
+        {%- else -%}
+          {%- assign align = "left" %}
+            <li class="timeline-inverted">
+        {% endif %}
+      {% else %}
+        {%- if org.align and org.align == "right" -%}
+          {%- assign align = "left" -%}
+          <li class="timeline-inverted">
+        {%- else -%}
+          {%- assign align = "right" %}
+          <li>
+        {% endif %}
+      {%- endif -%}
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{ site.data.organizations[orgName].logo }}" alt="{{ orgData.alt | default: ""}}">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>{{ orgData.year | markdownify }}</h4>
+                {% if orgData.position %}
+                <h4 class="subheading">{{ orgData.position }} - {{ site.data.organizations[orgName].title }}</h4>
+                {% else %}
+                <h4 class="subheading">{{ site.data.organizations[orgName].title }}</h4>
+                {% endif %}
+              </div>
+              <div class="timeline-body">
+                <div class="text-muted">{{ orgData.desc | markdownify }}</div>
+              </div>
+              {%- if orgData.works -%}
+              <div>
+                <h5 class="project_text">{{ site.data.sitetext[site.locale].timeline.project.text }}</h5>
+                  <div class="row timeline-project-context">
+                    <div class="col-md-12">
+                      <ul >
+                      {%- for work in orgData.works -%}
+                      {% assign imageFileName = work.image | split: '/' | last %}
+                      {% assign fileNameWithoutExtension = imageFileName | split: '.' | first %}
+                      {% assign indexMod = forloop.index | modulo: 2%}
+                      {%- if forloop.last and indexMod == 1 and align == "right" -%}  
+                      <li class="timeline-project-list-align-right">  
+                      {%- else -%}
+                      <li class="">  
+                      {%- endif -%}
+                        <a class="text-muted" data-toggle="modal" href="#{{ work.key }}">
+                          <img class="img-fluid" src="{{ work.image }}" alt="">
+                          <p>{{ work.title }}</p>
+                        </a>
+                      </li>
+                      {% endfor %}	
+                      </ul>
+                    </div>
+                    
+                </div>
+              </div>
+              {%- endif -%}
+            </div>
+          </li>
+    {% endfor %}	
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Timeline -->
+{% include portfolios.html %}

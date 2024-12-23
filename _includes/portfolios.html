@@ -1,0 +1,114 @@
+<!-- Portfolio Modals -->
+{% for portfolio in site.portfolios %}
+{% assign carousel_id = "carousel_portfolio_" | append: portfolio.key %}
+<div class="portfolio-modal modal fade" id="{{ portfolio.key }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase">{{ portfolio.title }}</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <!-- Image sldie -->
+              <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  {%- for image in portfolio.carousel.list -%}
+                  <li data-target="#{{ carousel_id }}" data-slide-to="{{forloop.index-1}}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
+                  {%- endfor -%}
+                </ol>
+                <div class="carousel-inner">
+                  {%- for media in portfolio.carousel.list -%}
+                  <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+                    {% if media.type == "image" %}
+                      <img src="{{ media.url }}" class="d-block w-100" alt="{{ media.alt }}">
+                    {% else if media.type == "iframe" %}
+                      {{ media.url }}
+                    {% endif %}
+                  </div>
+                  {%- endfor -%}
+                </div>
+                <a class="carousel-control-prev" href="#{{ carousel_id }}" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#{{ carousel_id }}" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row portfolio-info py-4">
+            <div class="col-lg-3 offset-lg-1 text-center text-lg-start">
+              <p class="mb-1"><strong>Date:</strong></p>
+              <p class="text-muted">{{ portfolio.projectDate }}</p>
+            </div>
+            <div class="col-lg-4 text-center portfolio-client">
+              <p class="mb-1"><strong>Client:</strong></p>
+              <p class="text-muted">
+                <img src="{{ site.data.organizations[portfolio.company].logo }}" alt="{{ site.data.organizations[portfolio.company].title }}" class="img-fluid mt-2"><br>
+                {{ site.data.organizations[portfolio.company].title ] }}
+              </p>
+            </div>
+            <div class="col-lg-3 text-center text-lg-start">
+              <p class="mb-1"><strong>Category:</strong></p>
+              <p class="text-muted">{{ portfolio.category }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p>{{ portfolio.content }}</span>
+            </div>
+          </div>
+          <div class="portfolio-skills py-4">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <p><strong>Skills:</strong></p>
+                <div class="portfolio-skills-grid">
+                  <ul>
+                    {% for skill_category in portfolio.skills %}
+                    {% assign category_name = skill_category[0] %}
+                    {% assign skill_keys = skill_category[1] %}
+                    {% for skill_hash in skill_keys %}
+                    {% assign skill_key = skill_hash | first %}
+                    {% assign skill_data = site.data.skills[category_name][skill_key] %}
+                    <li class="skill-item">
+                        <img src="{{ skill_data.logo }}" alt="{{ skill_data.title }}" class="img-fluid">
+                        <span>{{ skill_data.title }}</span>
+                    </li>
+                    {% endfor %}
+                  {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 mx-auto d-flex justify-content-center">
+                <button
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                  type="button"
+                >
+                  <i class="fas fa-times"></i>
+                  {{ site.data.sitetext[site.locale].portfolio.closebutton |
+                  default: "Close" }}
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<!-- End Portfolio Modals -->

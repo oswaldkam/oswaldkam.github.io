@@ -1,0 +1,24 @@
+centennialcolelge:
+  title: "Centennial College"
+  logo: assets/img/organizations/centennial.jpeg
+dbsbank:
+  title: "DBS Bank (Hong Kong) Limited"
+  logo: assets/img/organizations/dbs.svg
+esd:
+  title: "ESD Services Limited"
+  logo: assets/img/organizations/esd.png
+hkmu: 
+  title: "Hong Kong Metropolitan University"
+  logo: assets/img/organizations/hkmu.png
+pccw:
+  title: "PCCW"
+  logo: assets/img/organizations/pccw.jpeg
+psa:  
+  title: "Playstudios Asia"
+  logo: assets/img/organizations/psa.png
+scrum:  
+  title: "Scrum.org"
+  logo: assets/img/organizations/psm.png
+viutv:
+  title: "viuTV"
+  logo: assets/img/organizations/viu.svg

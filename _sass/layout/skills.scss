@@ -1,0 +1,71 @@
+:root {
+  --skill-logo-width: 5rem;
+  --skill-logo-height: 5rem;
+  --skill-grid-gap:3rem;
+  --skill-grid-columns-repeat:10rem;
+
+  --skill-logo-mobile-width: 4rem;
+  --skill-logo-mobile-height: 4rem;
+  --skill-grid-mobile-gap:1rem;
+  --skill-grid-mobile-columns-repeat:5rem;
+  
+  --skill-card-height: 7rem;
+  --skill-item-margin-bottom: 2rem;
+}
+/* Page Section */
+
+.skill-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.skill-grid {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--skill-grid-mobile-columns-repeat), 1fr));
+    gap: var(--skill-grid-mobile-gap);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  ul:last-child {
+    display: flex;
+    justify-content: space-evenly; /* Ensures equal space for items in the last row */
+    flex-wrap: wrap; /* Allows wrapping for smaller screen sizes */
+  }
+  margin-bottom: 1rem;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 1rem;
+  height: var(--skill-card-height);
+
+  img {
+    width: var(--skill-logo-width);
+    height: var(--skill-logo-height);
+    object-fit: contain; /* Ensures proper scaling of the logo */
+    margin: 0 auto; /* Center the image within the card */
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .skill-grid {
+    ul {
+      gap: var(--skill-grid-mobile-gap);
+      grid-template-columns: repeat(auto-fit, minmax(var(--skill-grid-columns-repeat), 1fr));
+    }
+  }
+  .skill-title {
+    margin-top: var(--skill-item-margin-bottom);
+    margin-bottom: var(--skill-item-margin-bottom);
+  }
+}
