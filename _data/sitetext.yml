@@ -7,7 +7,7 @@ en: &DEFAULT_EN
 
   about:
     title: "About Me"
-    body: "Hi, I'm Oswald Wing Cheung Kam, a senior full stacked engineer with 10 years experience based in Toronto, Ontario, Canada."
+    body: "Hi, I'm Oswald Wing Cheung Kam, a senior full stacked engineer with 10 years experience based in Toronto, Ontario, Canada. Design and develop high-performance systems and deliver high-quality features."
     social:
       - url: https://linkedin.com/in/oswaldkam
         icon: "fab fa-linkedin-in"
